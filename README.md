@@ -23,3 +23,13 @@ statements written over flowOn will execute in dispacter
 .collection will return data after operation is completed
 
 flowOn(Dispatcher) //it will execute operation method 
+
+
+# Sealed-Clasees-
+sealed class MainActivityViewState{
+object showLoading : MainActivityViewState
+class ShowError(val error : Throwable) : MainActivityViewState
+class showData(val data : List <SingleDataModule>): MainActivityViewState
+
+}
+
